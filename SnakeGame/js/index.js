@@ -16,7 +16,6 @@ food = {x: 6, y: 7};
 // Game Functions
 function main(ctime) {
     window.requestAnimationFrame(main);
-    // console.log(ctime)
     if((ctime - lastPaintTime)/1000 < 1/speed){
         return;
     }
@@ -76,7 +75,6 @@ function gameEngine(){
     snakeArr[0].y += inputDir.y;
 
     // Part 2: Display the snake and Food
-    // Display the snake
     board.innerHTML = "";
     snakeArr.forEach((e, index)=>{
         snakeElement = document.createElement('div');
